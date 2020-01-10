@@ -83,12 +83,12 @@ for i in range(len(elementi)):
             if indici[x] != ind_oss:
                 #indice altro elemento
                 ind_2 = indici[x]
-        #Trovo il codice del secondo elemento
+        #Trovo il secondo elemento
         elem_2 = ""
         for z in range(len(elementi)):
             if elementi[z] != "O":
                 elem_2 = elementi[z]
-        #Formula IUPAC dell'Ossido
-        nomeIupac = prefissi[ind_oss] + "ossido di " + prefissi[ind_2] + dic[elem_2]
+        #Formula IUPAC dell'Ossido (la lista prefissi e' sfalsata di 1 rispetto agli indici degli elementi)
+        nomeIupac = prefissi[ind_oss - 1] + "ossido di " + prefissi[ind_2 - 1] + dic[elem_2]
 
 print("Formula IUPAC: " + nomeIupac)
