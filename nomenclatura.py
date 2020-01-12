@@ -53,12 +53,13 @@ for i in range(len(formula)):
                     indici.append(1) #L'indice e' necessariamente 1
                 elif formula[i+2].isdigit() == True: #Controllo l'indice
                     indici.append(int(formula[i+2]))
-                else: #Altrimenti la lettera dopo e' maiuscola e l'indice e' 1
+                elif formula[i+2].isupper() == True: #Altrimenti la lettera dopo e' maiuscola e l'indice e' 1
                     indici.append(1)
 
             elif formula[i+1].isdigit() == True: #Se la lettera dopo e' una cifra (indice)
                 elementi.append(formula[i]) #Aggiungo il primo elemento alla lista
                 indici.append(int(formula[i+1])) #Aggiungo l'indice del primo elemento alla lista
+
 
 
 #Funzionante. Hai correttamente salvato e interpretato la formula. Ora inizia l'elaborazione.
@@ -72,15 +73,15 @@ nomeIupac = ""
 #Prefissi della IUPAC
 prefissi = ["Mono", "Di", "Tri", "Tetra", "Penta", "Esa", "Epta", "Octo", "Enna", "Deca"]
 
-'''Ossidi'''
+'''Ossidi IUPAC'''
 #Per essere un Ossido il composto deve avere al suo interno l'Ossigeno
 for i in range(len(elementi)):
     if elementi[i] == "O":
         #Indice ossigeno
         ind_oss = indici[i]
-        #Trovo l'indice dell'altro elemento. Per farlo creo un ciclo dove cerco l'indice dell'ossigeno e se il valore e' diseguale lo salvo
+        #Trovo l'indice dell'altro elemento.
         for x in range(len(indici)):
-            if indici[x] != ind_oss:
+            if x != i:
                 #indice altro elemento
                 ind_2 = indici[x]
         #Trovo il secondo elemento
