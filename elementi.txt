@@ -1,118 +1,118 @@
-H Idrogeno
-He Elio
-Li Litio
-Be Berillio
-B Boro
-C Carbonio
-N Azoto
-O Ossigeno
-F Fluoro
-Ne Neon
-Na Sodio
-Mg Magnesio
-Al Alluminio
-Si Silicio
-P Fosforo
-S Zolfo
-Cl Cloro
-Ar Argo
-K Potassio
-Ca Calcio
-Sc Scandio
-Ti Titanio
-V Vanadio
-Cr Cromo
-Mn Manganese
-Fe Ferro
-Co Cobalto
-Ni Nichel
-Cu Rame
-Zn Zinco
-Ga Gallio
-Ge Germanio
-As Arsenico
-Se Selenio
-Br Bromo
-Kr Kripton
-Rb Rubidio
-Sr Stronzio
-Y Ittrio
-Zr Zirconio
-Nb Niobio
-Mo Molibdeno
-Tc Tecnezio
-Ru Rutenio
-Rh Rodio
-Pd Palladio
-Ag Argento
-Cd Cadmio
-In Indio
-Sn Stagno
-Sb Antimonio
-Te Tellurio
-I Iodio
-Xe Xenon
-Cs Cesio
-Ba Bario
-La Lantanio
-Ce Cerio
-Pr Praseodimio
-Nd Neodimio
-Pm Promezio
-Sm Samario
-Eu Europio
-Gd Gadolinio
-Tb Terbio
-Dy Disprosio
-Ho Olmio
-Er Erbio
-Tm Tulio
-Yb Itterbio
-Lu Lutezio
-Hf Hafnio
-Ta Tantalio
-W Tungsteno
-Re Renio
-Os Osmio
-Ir Iridio
-Pt Platino
-Au Oro
-Hg Mercurio
-Tl Tallio
-Pb Piombo
-Bi Bismuto
-Po Polonio
-At Astato
-Rn Radon
-Fr Francio
-Ra Radio
-Ac Attinio
-Th Torio
-Pa Proattinio
-U Uranio
-Np Nettunio
-Pu Plutonio
-Am Americio
-Cm Curio
-Bk Berkelio
-Cf Californio
-Es Einstenio
-Fm Fermio
-Md Mendelevio
-No Nobelio
-Lr Laurenzio
-Rf Rutherfordio
-Db Dubnio
-Sg Seaborgio
-Bh Bohrio
-Hs Hassio
-Mt Meitnerio
-Ds Darmstadtio
-Rg Roentgenio
-Cn Copernicio
-Nh Nihonio
-Fl Flerovio
-Mc Moscovio
-Lv Livermorio
-Ts Tennessinio
-Og Oganessio
+H Idrogeno 1 2.20
+He Elio 18 ?
+Li Litio 1 0.98
+Be Berillio 2 1.57
+B Boro 13 2.04
+C Carbonio 14 2.55
+N Azoto 15 3.04
+O Ossigeno 16 3.44
+F Fluoro 17 3.98
+Ne Neon 18 ?
+Na Sodio 1 0.93
+Mg Magnesio 2 1.31
+Al Alluminio 13 1.61
+Si Silicio 14 1.90
+P Fosforo 15 2.19
+S Zolfo 16 2.58
+Cl Cloro 17 3.16
+Ar Argo 18 ?
+K Potassio 1 0.82
+Ca Calcio 2 1.0
+Sc Scandio 3 1.36
+Ti Titanio 4 1.54
+V Vanadio 5 1.63
+Cr Cromo 6 1.66
+Mn Manganese 7 1.55
+Fe Ferro 8 1.83
+Co Cobalto 9 1.88
+Ni Nichel 10 1.91
+Cu Rame 11 1.90
+Zn Zinco 12 1.65
+Ga Gallio 13 1.81
+Ge Germanio 14 2.01
+As Arsenico 15 2.18
+Se Selenio 16 2.55
+Br Bromo 17 2.96
+Kr Kripton 18 ?
+Rb Rubidio 1 0.82
+Sr Stronzio 2 0.95
+Y Ittrio 3 1.22
+Zr Zirconio 4 1.33
+Nb Niobio 5 1.6
+Mo Molibdeno 6 2.16
+Tc Tecnezio 7 1.9
+Ru Rutenio 8 2.2
+Rh Rodio 9 2.28
+Pd Palladio 10 2.20
+Ag Argento 11 1.93
+Cd Cadmio 12 1.69
+In Indio 13 1.78
+Sn Stagno 14 1.96
+Sb Antimonio 15 2.05
+Te Tellurio 16 2.1
+I Iodio 17 2.66
+Xe Xenon 18 ?
+Cs Cesio 1 0.79
+Ba Bario 2 0.89
+La Lantanio ? 1.10
+Ce Cerio ? 1.12
+Pr Praseodimio ? 1.13
+Nd Neodimio ? 1.14
+Pm Promezio ? ?
+Sm Samario ? 1.17
+Eu Europio ? ?
+Gd Gadolinio ? 1.20
+Tb Terbio ? ?
+Dy Disprosio ? 1.22
+Ho Olmio ? 1.23
+Er Erbio ? 1.24
+Tm Tulio ? 1.25
+Yb Itterbio ? ?
+Lu Lutezio 3 1.27
+Hf Hafnio 4 1.3
+Ta Tantalio 5 1.5
+W Tungsteno 6 2.36
+Re Renio 7 1.9
+Os Osmio 8 2.2
+Ir Iridio 9 2.20
+Pt Platino 10 2.28
+Au Oro 11 2.54
+Hg Mercurio 12 2.0
+Tl Tallio 13 1.62
+Pb Piombo 14 2.33
+Bi Bismuto 15 2.02
+Po Polonio 16 2.0
+At Astato 17 2.2
+Rn Radon 18 ?
+Fr Francio 1 0.7
+Ra Radio 2 0.9
+Ac Attinio ? 1.1
+Th Torio ? 1.3
+Pa Protoattinio ? 1.5
+U Uranio ? 1.38
+Np Nettunio ? 1.36
+Pu Plutonio ? 1.28
+Am Americio ? 1.3
+Cm Curio ? 1.3
+Bk Berkelio ? 1.3
+Cf Californio ? 1.3
+Es Einstenio ? 1.3
+Fm Fermio ? 1.3
+Md Mendelevio ? 1.3
+No Nobelio ? 1.3
+Lr Laurenzio 3 ?
+Rf Rutherfordio 4 ?
+Db Dubnio 5 ?
+Sg Seaborgio 6 ?
+Bh Bohrio 7 ?
+Hs Hassio 8 ?
+Mt Meitnerio 9 ?
+Ds Darmstadtio 10 ?
+Rg Roentgenio 11 ?
+Cn Copernicio 12 ?
+Nh Nihonio 13 ?
+Fl Flerovio 14 ?
+Mc Moscovio 15 ?
+Lv Livermorio 16 ?
+Ts Tennessinio 17 ?
+Og Oganessio 18 ?
