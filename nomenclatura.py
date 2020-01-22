@@ -79,7 +79,7 @@ for i in range(len(elementi)):
     if elementi[i] == "O":
         #Indice ossigeno
         ind_oss = indici[i]
-        #Trovo l'indice dell'altro elemento.
+        #Trovo l'indice dell'altro elemento.HHH
         for x in range(len(indici)):
             if x != i:
                 #indice altro elemento
@@ -90,6 +90,6 @@ for i in range(len(elementi)):
             if elementi[z] != "O":
                 elem_2 = elementi[z]
         #Formula IUPAC dell'Ossido (la lista prefissi e' sfalsata di 1 rispetto agli indici degli elementi)
-        nomeIupac = prefissi[ind_oss - 1] + "ossido di " + prefissi[ind_2 - 1] + dic[elem_2]
+        nomeIupac = f"{prefissi[ind_oss - 1]}ossido di {prefissi[ind_2 - 1]}{dic[elem_2]}"
 
-print("Formula IUPAC: " + nomeIupac)
+print(f"Formula IUPAC: {nomeIupac}")
