@@ -5,27 +5,25 @@ Il programma interpreta una scritta tipo "HCl" e visualizza come risultato:
 "Nomenclatura IUPAC: Cloruro di Idrogeno
  Nomenclatura Tradizionale: Acido Cloridrico"
 '''
+
 #File utile per i nomi degli elementi
-nomi_el = open("elementi.txt", "r")
+with open("elementi.txt", "r") as nomi_el:
+    #Dizionario che contiene I codici e i nomi degli elementi
+    dic = {}
+    #Popolo il dizionario
+    while True:
+        #Linea di testo estratta
+        l = nomi_el.readline()
 
-#Dizionario che contiene I codici e i nomi degli elementi
-dic = {}
+        #Se mi trovo alla fine esco dal ciclo
+        if not l:
+            break;
 
-#Popolo il dizionario
-while True:
-    #Linea di testo estratta
-    l = nomi_el.readline()
+        #Splitto per "spazio" la stringa e inserisco la coppia in una lista
+        coppia = l.split()
 
-    #Se mi trovo alla fine esco dal ciclo
-    if not l:
-        break;
-
-    #Splitto per "spazio" la stringa e inserisco la coppia in una lista
-    coppia = l.split()
-
-    #Inserisco la coppia elemento-nome nel dizionario
-    dic[coppia[0]] = coppia[1]
-
+        #Inserisco la coppia elemento-nome nel dizionario
+        dic[coppia[0]] = coppia[1]
 
 #Formula chimica nel formato "PCl3" (elemento-indice)
 formula = input("Inserisci la formula chimica: ")
