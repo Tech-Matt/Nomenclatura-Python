@@ -26,7 +26,14 @@ with open("elementi.txt", "r") as nomi_el:
         dic[coppia[0]] = coppia[1]
 
 #formula chimica nel formato "PCl3" (elemento-indice)
-ins_form = input("Inserisci la formula chimica: ")
+while True:
+    ins_form = input("|Inserisci la formula chimica|: ")
+    #se la stringa inserita ha una lunghezza uguale a zero ritorna un messaggio d'errore
+    if len(ins_form) == 0:
+        print("---!Il campo non può rimanere vuoto!---\n")
+    #se la lunghezza è maggiore di zero, rompe il while True
+    else:
+        break
 
 #Lista che contiene gli elementi scritti nella formula
 elementi = []
