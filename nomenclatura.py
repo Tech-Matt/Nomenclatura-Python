@@ -8,7 +8,7 @@ Il programma interpreta una scritta tipo "HCl" e visualizza come risultato:
 
 #File utile per i nomi degli elementi
 with open("elementi.txt", "r") as nomi_el:
-    #Dizionario che contiene I codici e i nomi degli elementi
+    #Dizionario che contiene I simboli e i nomi degli elementi
     dic = {}
     #Popolo il dizionario
     while True:
@@ -19,11 +19,12 @@ with open("elementi.txt", "r") as nomi_el:
         if not l:
             break;
 
-        #Splitto per "spazio" la stringa e inserisco la coppia in una lista
-        coppia = l.split()
+        #Splitto per "spazio" la stringa e inserisco i valori in una lista(simbolo, nome, gruppo, elettronegativita'
+        #eventuale suffiso 'uro')
+        valori = l.split()
 
-        #Inserisco la coppia elemento-nome nel dizionario
-        dic[coppia[0]] = coppia[1]
+        #Inserisco per ogni elemento i valori nel dizionario
+        dic[valori[0]] = (valori[1], valori[2], valori[3], valori[4])
 
 #formula chimica nel formato "PCl3" (elemento-indice)
 while True:
@@ -66,10 +67,6 @@ for i in range(len(ins_form)):
                 indici.append(int(ins_form[i+1])) #Aggiungo l'indice del primo elemento alla lista
 
 
-
-#Funzionante. Hai correttamente salvato e interpretato la formula. Ora inizia l'elaborazione.
-#Memorizza elettronegativita' o numeri di ossidazione o altro per fare Nomenclatura IUPAC.
-
 '''Nomenclatura IUPAC'''
 
 #Nome finale IUPAC
@@ -79,22 +76,42 @@ nomeIupac = ""
 prefissi = ["Mono", "Di", "Tri", "Tetra", "Penta", "Esa", "Epta", "Octo", "Enna", "Deca"]
 
 '''Ossidi IUPAC'''
-#Per essere un Ossido il composto deve avere al suo interno l'Ossigeno
+#Per essere un Ossido binario il composto deve avere al suo interno l'Ossigeno
 for i in range(len(elementi)):
     if elementi[i] == "O":
         #Indice ossigeno
         ind_oss = indici[i]
-        #Trovo l'indice dell'altro elemento.HHH
+        #Trovo l'indice dell'altro elemento.
         for x in range(len(indici)):
             if x != i:
                 #indice altro elemento
                 ind_2 = indici[x]
-        #Trovo il secondo elemento
-        elem_2 = ""
-        for z in range(len(elementi)):
-            if elementi[z] != "O":
-                elem_2 = elementi[z]
-        #ìformula IUPAC dell'Ossido (la lista prefissi e' sfalsata di 1 rispetto agli indici degli elementi)
-        nomeIupac = f"{prefissi[ind_oss - 1]}ossido di {prefissi[ind_2 - 1]}{dic[elem_2]}"
+                #Simbolo altro elemento
+                elem_2 = elementi[x]
+        #formula IUPAC dell'Ossido (la lista prefissi e' sfalsata di 1 rispetto agli indici degli elementi)
+        nomeIupac = f"{prefissi[ind_oss - 1]}ossido di {prefissi[ind_2 - 1]}{dic[elem_2][0]}"
+
+
+'''Idruri e Idrossidi IUPAC '''
+#Per essere un idruro il composto binario deve avere al suo Interno l'Idrogeno e l'altro elemento
+#Non deve appartenere ai gruppi 16-17, viceversa e' un idrossido
+for i in range(len(elementi)):
+    if elementi[i] == "H":
+        #Indice Idrogeno
+        ind_idr = indici[i]
+        #Trovo l'indice dell'altro elemento.
+        for x in range(len(indici)):
+            if x != i:
+                #indice altro elemento
+                ind_2 = indici[x]
+                #Simbolo altro elemento
+                elem_2 = elementi[x]
+
+        #Verifico che l'elemento non faccia parte del gruppo 16-17
+        if (dic[elem_2][1] not in ("16", "17")):
+            nomeIupac = f"{prefissi[ind_idr - 1]}idruro di {prefissi[ind_2 - 1]}{dic[elem_2][0]}"
+        else:#Idracido
+            nomeIupac = f"{dic[elem_2][3]} di {prefissi[ind_idr - 1]}idrogeno"
+
 
 print(f"formula IUPAC: {nomeIupac}")
